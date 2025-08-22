@@ -1,9 +1,9 @@
 /*Selector de etiqueta*/
 h1 {
-    color:red;
+    color:rgb(27, 3, 3);
 }
 h2 {
-    color:blue;
+    color:rgb(170, 83, 83);
 }
 /*Selector de clase*/
 .oscuro {
@@ -12,5 +12,32 @@ h2 {
 }
 /*Selector ID*/
 #p1 {
-    color:green;
+    color:rgb(79, 109, 97);
 }
+header {
+    background-image: url("./Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  footer {
+    background-color: #fcabf5;
+    color: #fff8ec;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer a {
+    color: #fff8ec;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 0 0.5rem; 
+    font-size: 1.8rem; 
+    display: inline-block; 
+  }
+  
+  footer a:hover {
+    color: rgb(214, 163, 255);
+  }
