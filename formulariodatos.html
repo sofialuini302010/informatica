@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Estudiante</title>
+</head>
+<body>
+  <h1>Registro de Estudiante</h1>
+
+  <form>
+    Nombre: <input type="text" id="nombre"><br><br>
+    Apellido: <input type="text" id="apellido"><br><br>
+    Curso: <input type="text" id="curso"><br><br>
+    <button type="button" onclick="mostrar()">Enviar</button>
+  </form>
+
+  <script>
+    function mostrar() {
+      let nombre = document.getElementById("nombre").value;
+      let apellido = document.getElementById("apellido").value;
+      let curso = document.getElementById("curso").value;
+
+      let nuevaVentana = window.open("", "_blank");
+      nuevaVentana.document.write("<h1>Bienvenido/a</h1>");
+      nuevaVentana.document.write("<p>Nombre: " + nombre + "</p>");
+      nuevaVentana.document.write("<p>Apellido: " + apellido + "</p>");
+      nuevaVentana.document.write("<p>Curso: " + curso + "</p>");
+    }
+  </script>
+</body>
+</html>

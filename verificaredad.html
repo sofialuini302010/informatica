@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>verificar edad</title>
+  <style>
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="verificarEdad()">verificar edad</button>
+
+  <script>
+    function verificarEdad() {
+      let edad = prompt("Ingrese su edad:");
+      edad = Number(edad);
+
+      if (edad >= 18) {
+        alert("Acceso permitido");
+      } else {
+        alert("Acceso denegado");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+

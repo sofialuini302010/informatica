@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contador descendente</title>
+</head>
+<body>
+  <h1>Ejercicio: Contador descendente</h1>
+  <p>Contador - <span id="conteo">10</span></p>
+  <button id="btnbajar">Bajar</button>
+
+  <script>
+    let contador = 10;
+    let boton = document.getElementById("btnbajar");
+    let numero = document.getElementById("conteo");
+
+    boton.addEventListener("click", function(){
+      if(contador > 0){
+        contador--;
+        numero.textContent = contador;
+      } else {
+        alert("llegaste al mínimo");
+      }
+    });
+  </script>
+</body>
+</html>
+
